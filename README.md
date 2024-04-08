@@ -9,12 +9,14 @@ Quoting in implied volatility terms can give some advantages, such as comparabil
 
 
 
-
 ### Newton Raphson Algorithm 
 It is a powerful root finder (convergence rate, wich is higher when the function is linear). Generally, the convergence rate is quadratic, but it is not always guaranteed due to stationary points. 
 
-For a typical range of volatility values in financial markets, the relationship is nearly linear. Thus, considering an initial guess x<sub>0, the Newton Raphson algorithm finds the value x<sub>1 through a linear interpolation to the objective function f* as the solution of: 
+For a typical range of volatility values in financial markets, the relationship is nearly linear. Thus, considering an initial guess X<sub>0</sub>, the Newton Raphson algorithm finds the value X<sub>1</sub> through a linear interpolation to the objective function f* (being the same as V<sub>mkt</sub>) as the solution of: 
+
 
 
 #### Implications
 Unfortunately, Newton Raphson Algorithm is not guaranteed to converge in the general case: Stationary points, overshoots, or poor initial guesses may plague the algorithm. However, convergence is guaranteed when the function f is continuous, strictly monotonic, and convex (or concave).
+
+
